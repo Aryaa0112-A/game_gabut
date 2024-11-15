@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/gambaranslot.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALGORITMA SLOT</title>
+  </head>
+  <body>
+    <div class="slot-machine">
+      <div class="slot">
+        <span id="slot1">🍒</span>
+      </div>
+      <div class="slot">
+        <span id="slot2">🍋</span>
+      </div>
+      <div class="slot">
+        <span id="slot3">🍉</span>
+      </div>
+    </div>
+    <button onclick="spin()">Main</button>
+    <div id="result"></div>
+    <div class="balance">
+      <p>Debit : <span id="balance">0</span></p>
+    </div>
+    <button onclick="deposit()">Isi</button>
+    <button onclick="withdraw()">Tarik</button>
+    <br />
+    <button class="auto-spin" data-spins="10" onclick="startAutoSpin(10)">
+      10X Main
+    </button>
+    <button class="auto-spin" data-spins="20" onclick="startAutoSpin(20)">
+      20X Main
+    </button>
+    <button class="auto-spin" data-spins="30" onclick="startAutoSpin(30)">
+      30X Main
+    </button>
+    <button class="auto-spin" data-spins="50" onclick="startAutoSpin(50)">
+      50X Main
+    </button>
+    <button class="auto-spin" data-spins="100" onclick="startAutoSpin(100)">
+      100X Main
+    </button>
+    <button class="auto-spin" data-spins="500" onclick="startAutoSpin(500)">
+      500X Main
+    </button>
+    <button class="auto-spin" data-spins="1000" onclick="startAutoSpin(1000)">
+      1000X Main
+    </button>
+    
+    <script src="assets/gambaranslot.js">
+    </script>
+  </body>
+  <audio autoplay>
+    <source src = "assets/mahjong.mp3" type="audio/mp3">
+  </audio>
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b></b>
+    </div>
+    Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>. All rights reserved. | Made by <a>arya</a>
+  </footer>
+  </div>
+</html>
